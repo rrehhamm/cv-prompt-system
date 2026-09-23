@@ -309,6 +309,7 @@ QA Intern | Company Name | City, Country | Jun 2025 – Sep 2025
 - Standard headings: Professional Summary, Skills, Work Experience, Internship Experience, Projects, Education, Certifications, Training, Volunteer Experience, Leadership Experience, Languages.
 - Contact details in the main body, never only in the page header or footer.
 - One consistent date format (for example: Jan 2023 – Present).
+- Experience entries (Work, Internship, Volunteer, Leadership) in reverse chronological order: newest first, oldest last.
 - The CV must still read correctly as plain text.
 - Tables are fine in your analysis and reports, but never inside the CV.
 
@@ -585,7 +586,7 @@ STEP 1: CAREER FACT SHEET
 Organize everything I provided under these headings (skip any heading with no content):
 Contact Details | Target Role | Education | Work Experience | Internships | Training | Projects | Technical Skills | Soft Skills (with where I showed them) | Certifications (Completed / In Progress) | Volunteer | Leadership | Languages | Awards and Other
 - Use neutral, factual notes, not polished CV wording.
-- Keep my facts exactly as given. Standardize dates to "Mon YYYY".
+- Keep my facts exactly as given. Standardize dates to "Mon YYYY". List entries in each section newest first.
 - Mark required-but-missing items as <span class="mk">[MISSING: item]</span> and unclear ones as <span class="mk">[CONFIRM: question]</span>.
 
 STEP 2: RELEVANCE MAP
@@ -705,7 +706,7 @@ FOLLOW THESE STEPS IN ORDER
 7. Enforce the limits: maximum 3 bullets per job, internship, project, and volunteer or leadership entry; 1–2 lines per bullet; Summary of 3–5 lines.
 8. Split skills into "Technical Skills" (relevant subcategories such as Programming Languages, Tools, Databases) and "Soft Skills" (only those my experience supports).
 9. Rewrite the Professional Summary for this specific job, using only real facts.
-10. Make everything consistent: date format, tense (present for the current role, past for previous roles), titles, company names, technology spelling.
+10. Make everything consistent: date format, tense (present for the current role, past for previous roles), titles, company names, technology spelling. In every experience section, list entries newest to oldest.
 11. Keep an ATS-friendly format: single column, standard headings, simple bullets, contact details in the body, no tables, icons, or graphics.
 12. Run a quick post-edit ATS check.
 
@@ -1025,6 +1026,9 @@ ACCURACY RULES
 - Use only numbers I provided. Never estimate, round up, or invent percentages, counts, time savings, or users. If a real metric would strengthen a bullet, write the bullet without a number and add <span class="mk">[ADD REAL METRIC: what to measure, e.g., number of test cases or % of time saved]</span>.
 - If no JD is provided, do not guess one. Write a general version and label it "GENERAL VERSION - not tailored to a specific job".
 
+ORDER
+- List positions in reverse chronological order: current or most recent role first, oldest last. Within one company, list the latest title first.
+
 FOR EACH POSITION
 1. Header: Job Title | Company | City, Country (or Remote) | Mon YYYY – Mon YYYY (or Present)
 2. Select the contributions most relevant to the JD. Drop minor tasks and duplicates.
@@ -1096,6 +1100,9 @@ PLACEMENT
 - If my internships are my most relevant experience, recommend whether to place them under "Work Experience" or a separate "Internship Experience" section, and explain why. Either way, the title must show it was an internship (e.g., "QA Intern", "Software Engineering Intern").
 - University-required practical or field training at a company can go here, labeled truthfully (e.g., "Practical Training, Company Name").
 
+ORDER
+- List internships in reverse chronological order: most recent first, oldest last.
+
 FOR EACH INTERNSHIP
 - Header (facts unchanged): Intern Title | Company | City, Country (or Remote) | Mon YYYY – Mon YYYY
 - MAXIMUM 3 bullets (1–2 if it was short or less relevant), 1–2 lines each.
@@ -1105,7 +1112,7 @@ FOR EACH INTERNSHIP
 - No "Responsible for", "Helped with", or filler.
 
 OUTPUT
-1. The internship section in plain text (code block).
+1. The internship section in plain text (code block), most recent first.
 2. Placement recommendation.
 3. JD keywords used and where each is supported.
 4. Placeholders and questions.
@@ -1388,6 +1395,7 @@ SELECT
 FORMAT
 Volunteer Role | Organization | City, Country | Mon YYYY – Mon YYYY
 • 1–3 bullets (usually 1–2), 1–2 lines each
+- Order: reverse chronological, newest first and oldest last.
 
 BULLET RULES
 - Accurate action verb + what I did + real scope or result if provided.
@@ -1396,7 +1404,7 @@ BULLET RULES
 - If no JD is provided, select by general relevance to my career direction and label the result "GENERAL VERSION".
 
 OUTPUT
-1. The Volunteer Experience section in plain text (code block).
+1. The Volunteer Experience section in plain text (code block), most recent first.
 2. Include / shorten / omit decisions with reasons.
 3. Placeholders and questions.
 
@@ -1439,6 +1447,7 @@ SELECT
 FORMAT
 Leadership Role | Organization | City, Country | Mon YYYY – Mon YYYY
 • 1–3 bullets (usually 1–2), 1–2 lines each
+- Order: reverse chronological, newest first and oldest last.
 
 BULLET RULES
 - Show real leadership: what I led, organized, or decided; the scale, only if I provided it; a real outcome, if I provided one.
@@ -1446,7 +1455,7 @@ BULLET RULES
 - If no JD is provided, select by general relevance and label the result "GENERAL VERSION".
 
 OUTPUT
-1. The Leadership Experience section in plain text (code block).
+1. The Leadership Experience section in plain text (code block), most recent first.
 2. Include / shorten / omit and placement decisions with reasons.
 3. Placeholders and questions.
 
@@ -1707,7 +1716,7 @@ OUTPUT
 
 CHECK
 1. Dates: one format throughout (e.g., "Jan 2023 – Present"), the same dash style, start before end, no unexplained overlaps, "Present" only for current roles. Flag gaps longer than 6 months for my awareness; do not invent explanations.
-2. Date logic: graduation dates vs. roles, certification dates vs. training dates, any impossible sequence.
+2. Date logic: graduation dates vs. roles, certification dates vs. training dates, any impossible sequence; entries in each experience section must run newest to oldest (reorder if not).
 3. Years of experience: any number in the Summary must match the dates in the Experience section.
 4. Job titles and company names: spelled the same everywhere (header, Summary, Experience).
 5. Technology names: consistent spelling and capitalization (e.g., JavaScript, Node.js, PostgreSQL, GitHub, Microsoft Excel).
@@ -1830,6 +1839,7 @@ Adjust if my situation clearly calls for it, and say why.
 STEP 2: ASSEMBLE
 - Standard headings in one consistent style (Title Case or ALL CAPS, not both).
 - One entry format used everywhere: title, organization, location, and dates in the same order.
+- Within each experience section (Work, Internship, Volunteer, Leadership), list entries newest first, oldest last.
 - Skills section = "Technical Skills" (subcategory lines) + "Soft Skills" (one line).
 - Remove duplicates across sections (e.g., the same project under Education and Projects).
 - Contact details in the body, not in a page header or footer. No tables, columns, icons, or graphics.
@@ -2398,6 +2408,7 @@ You are my CV/Resume assistant for this entire conversation. Follow these ground
 - Standard headings: Professional Summary, Skills, Work Experience, Internship Experience, Projects, Education, Certifications, Training, Volunteer Experience, Leadership Experience, Languages.
 - Contact details in the main body, never only in the page header or footer.
 - One consistent date format (for example: Jan 2023 – Present).
+- Experience entries (Work, Internship, Volunteer, Leadership) in reverse chronological order: newest first, oldest last.
 - The CV must still read correctly as plain text.
 - Tables are fine in your analysis and reports, but never inside the CV.
 
@@ -2719,7 +2730,7 @@ STEP 1: CAREER FACT SHEET
 Organize everything I provided under these headings (skip any heading with no content):
 Contact Details | Target Role | Education | Work Experience | Internships | Training | Projects | Technical Skills | Soft Skills (with where I showed them) | Certifications (Completed / In Progress) | Volunteer | Leadership | Languages | Awards and Other
 - Use neutral, factual notes, not polished CV wording.
-- Keep my facts exactly as given. Standardize dates to "Mon YYYY".
+- Keep my facts exactly as given. Standardize dates to "Mon YYYY". List entries in each section newest first.
 - Mark required-but-missing items as [MISSING: item] and unclear ones as [CONFIRM: question].
 
 STEP 2: RELEVANCE MAP
@@ -2864,7 +2875,7 @@ FOLLOW THESE STEPS IN ORDER
 7. Enforce the limits: maximum 3 bullets per job, internship, project, and volunteer or leadership entry; 1–2 lines per bullet; Summary of 3–5 lines.
 8. Split skills into "Technical Skills" (relevant subcategories such as Programming Languages, Tools, Databases) and "Soft Skills" (only those my experience supports).
 9. Rewrite the Professional Summary for this specific job, using only real facts.
-10. Make everything consistent: date format, tense (present for the current role, past for previous roles), titles, company names, technology spelling.
+10. Make everything consistent: date format, tense (present for the current role, past for previous roles), titles, company names, technology spelling. In every experience section, list entries newest to oldest.
 11. Keep an ATS-friendly format: single column, standard headings, simple bullets, contact details in the body, no tables, icons, or graphics.
 12. Run a quick post-edit ATS check.
 
@@ -3236,6 +3247,9 @@ ACCURACY RULES
 - Use only numbers I provided. Never estimate, round up, or invent percentages, counts, time savings, or users. If a real metric would strengthen a bullet, write the bullet without a number and add [ADD REAL METRIC: what to measure, e.g., number of test cases or % of time saved].
 - If no JD is provided, do not guess one. Write a general version and label it "GENERAL VERSION - not tailored to a specific job".
 
+ORDER
+- List positions in reverse chronological order: current or most recent role first, oldest last. Within one company, list the latest title first.
+
 FOR EACH POSITION
 1. Header: Job Title | Company | City, Country (or Remote) | Mon YYYY – Mon YYYY (or Present)
 2. Select the contributions most relevant to the JD. Drop minor tasks and duplicates.
@@ -3317,6 +3331,9 @@ PLACEMENT
 - If my internships are my most relevant experience, recommend whether to place them under "Work Experience" or a separate "Internship Experience" section, and explain why. Either way, the title must show it was an internship (e.g., "QA Intern", "Software Engineering Intern").
 - University-required practical or field training at a company can go here, labeled truthfully (e.g., "Practical Training, Company Name").
 
+ORDER
+- List internships in reverse chronological order: most recent first, oldest last.
+
 FOR EACH INTERNSHIP
 - Header (facts unchanged): Intern Title | Company | City, Country (or Remote) | Mon YYYY – Mon YYYY
 - MAXIMUM 3 bullets (1–2 if it was short or less relevant), 1–2 lines each.
@@ -3326,7 +3343,7 @@ FOR EACH INTERNSHIP
 - No "Responsible for", "Helped with", or filler.
 
 OUTPUT
-1. The internship section in plain text (code block).
+1. The internship section in plain text (code block), most recent first.
 2. Placement recommendation.
 3. JD keywords used and where each is supported.
 4. Placeholders and questions.
@@ -3658,6 +3675,7 @@ SELECT
 FORMAT
 Volunteer Role | Organization | City, Country | Mon YYYY – Mon YYYY
 • 1–3 bullets (usually 1–2), 1–2 lines each
+- Order: reverse chronological, newest first and oldest last.
 
 BULLET RULES
 - Accurate action verb + what I did + real scope or result if provided.
@@ -3666,7 +3684,7 @@ BULLET RULES
 - If no JD is provided, select by general relevance to my career direction and label the result "GENERAL VERSION".
 
 OUTPUT
-1. The Volunteer Experience section in plain text (code block).
+1. The Volunteer Experience section in plain text (code block), most recent first.
 2. Include / shorten / omit decisions with reasons.
 3. Placeholders and questions.
 
@@ -3721,6 +3739,7 @@ SELECT
 FORMAT
 Leadership Role | Organization | City, Country | Mon YYYY – Mon YYYY
 • 1–3 bullets (usually 1–2), 1–2 lines each
+- Order: reverse chronological, newest first and oldest last.
 
 BULLET RULES
 - Show real leadership: what I led, organized, or decided; the scale, only if I provided it; a real outcome, if I provided one.
@@ -3728,7 +3747,7 @@ BULLET RULES
 - If no JD is provided, select by general relevance and label the result "GENERAL VERSION".
 
 OUTPUT
-1. The Leadership Experience section in plain text (code block).
+1. The Leadership Experience section in plain text (code block), most recent first.
 2. Include / shorten / omit and placement decisions with reasons.
 3. Placeholders and questions.
 
@@ -4042,7 +4061,7 @@ Act as a meticulous CV proofreader. Check my CV draft for consistency. Fix forma
 
 CHECK
 1. Dates: one format throughout (e.g., "Jan 2023 – Present"), the same dash style, start before end, no unexplained overlaps, "Present" only for current roles. Flag gaps longer than 6 months for my awareness; do not invent explanations.
-2. Date logic: graduation dates vs. roles, certification dates vs. training dates, any impossible sequence.
+2. Date logic: graduation dates vs. roles, certification dates vs. training dates, any impossible sequence; entries in each experience section must run newest to oldest (reorder if not).
 3. Years of experience: any number in the Summary must match the dates in the Experience section.
 4. Job titles and company names: spelled the same everywhere (header, Summary, Experience).
 5. Technology names: consistent spelling and capitalization (e.g., JavaScript, Node.js, PostgreSQL, GitHub, Microsoft Excel).
@@ -4182,6 +4201,7 @@ Adjust if my situation clearly calls for it, and say why.
 STEP 2: ASSEMBLE
 - Standard headings in one consistent style (Title Case or ALL CAPS, not both).
 - One entry format used everywhere: title, organization, location, and dates in the same order.
+- Within each experience section (Work, Internship, Volunteer, Leadership), list entries newest first, oldest last.
 - Skills section = "Technical Skills" (subcategory lines) + "Soft Skills" (one line).
 - Remove duplicates across sections (e.g., the same project under Education and Projects).
 - Contact details in the body, not in a page header or footer. No tables, columns, icons, or graphics.
